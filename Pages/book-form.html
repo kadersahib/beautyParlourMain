@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="../css/components/book-form.css">
+</head>
+
+<body>
+    <div class="model-overlay">
+        <div class="booking-container">
+            <div class="booking-form">
+                <div class="form-header">
+                    <h1>Booking Form</h1>
+                    <img src="../public/icons/x-symbol-svgrepo-com.svg" alt="" class="close">
+                </div>
+
+                <div class="form-content-details">
+                    <div class="form-content">
+                        <div class="client-section">
+                            <h2>Client Details</h2>
+
+                            <div class="login-prompt">
+                                <button class="login-btn">Have an Account? Log in</button>
+                            </div>
+
+                            <form id="bookingForm" class="booking-form-fields">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <input type="text" id="firstName" name="firstName" placeholder="First Name*"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="lastName" name="lastName" placeholder="Last Name*"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="email" placeholder="Email*" required>
+                                    </div>
+                                    <div class="form-group phone-group">
+                                        <div class="input-with-icons">
+                                            <div class="icon-group">
+                                                <img src="../public/icons/global.svg" alt="Globe" class="icon">
+                                                <img src="../public/icons/Vector.svg" alt="Vector" class="icon"
+                                                    id="vector-icon">
+                                                <div class="divider"></div>
+                                            </div>
+                                            <input type="tel" id="phone" name="phone" placeholder="Mobile Number*"
+                                                required>
+                                            <ul class="country-dropdown" id="countryDropdown"></ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group message-group">
+                                    <textarea id="message" name="message" placeholder="Add your Message"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+
+                    <div class="booking-details">
+                        <h2>Booking Details</h2>
+                        <div class="service-list">
+                            <!-- <div class="service-item">
+                                <div class="service-info">
+                                    <h3>Pedicure</h3>
+                                    <p class="service-time">01 May 2025 at 10:00 am</p>
+                                    <p class="service-price">₹ 350.00</p>
+                                    <p class="service-duration">1 hr</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-info">
+                                    <h3>Whitening Facials</h3>
+                                    <p class="service-time">01 May 2025 at 10:00 am</p>
+                                    <p class="service-price">₹ 2,500.00</p>
+                                    <p class="service-duration">1 hr 30 min</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-info">
+                                    <h3>Whitening Facials</h3>
+                                    <p class="service-time">01 May 2025 at 10:00 am</p>
+                                    <p class="service-price">₹ 2,500.00</p>
+                                    <p class="service-duration">1 hr 30 min</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-info">
+                                    <h3>Pedicure</h3>
+                                    <p class="service-time">01 May 2025 at 10:00 am</p>
+                                    <p class="service-price">₹ 350.00</p>
+                                    <p class="service-duration">1 hr</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="consent-text">
+                            <p>When you complete your booking, you allow us to send you related SMS messages.</p>
+                        </div>
+                        <button type="submit" class="next-btn" id="next-btn">Next</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/components/fetchCountries.js"></script>
+
+</body>
+
+</html>

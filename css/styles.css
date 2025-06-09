@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100..900&display=swap');
+
+
+/* desktop responsive code */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Sofia Sans', sans-serif;
+    overflow-y: auto;
+    font-size: 16px;
+
+}
+
+body {
+    background: url('../public/images/background-img-ld.png') center/cover no-repeat fixed,
+        rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    padding: 40px 128px 20px 128px;
+
+}
+
+#navbar-container {
+    /* position: sticky; */
+    top: 0;
+    z-index: 1;
+    /* Lower than .main */
+}
+
+.main {
+    position: relative;
+    z-index: 2;
+    padding: 24px 0px 0px 0px;
+    width: auto;
+}
+
+
+.slider-container {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    /* scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; */
+}
+
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content overlay */
+.content-block {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    outline: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.50);
+
+}
+
+.content-block h2 {
+    color: var(--Brand-1, #800080);
+    text-align: center;
+    font-family: "Sofia Sans";
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.content-block p {
+    color: var(--Brand-1, #800080);
+    text-align: center;
+    font-family: "Sofia Sans";
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+.book-now-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+    padding: 24px 28px;
+    background: #E8E8E8;
+}
+
+.book-now-container>div {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.book-now-card {
+    /* min-height: 291px; */
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-1 {
+    background-image: url("../public/images/book-now-cart-1-ld.png");
+
+}
+
+.card-2 {
+    background-image: url("../public/images/book-now-cart-2-ld.png");
+}
+
+.card-3 {
+    justify-content: flex-end;
+    background-image: url("../public/images/book-now-cart-3-ld.png");
+}
+
+.card-4 {
+    justify-content: flex-end;
+    background-image: url("../public/images/book-now-cart-4-ld.png");
+}
+
+.book-now-card-content {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 77.5px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+}
+
+.book-now-card-content span {
+    color: var(--Black, #333);
+    font-family: "Sofia Sans";
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.book-now-card-content a {
+    color: #000;
+    font-family: "Sofia Sans";
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    height: 29px;
+}
+
+.offers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 292px;
+    background-image: url("../public/images/offers-section-bg-ld.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.offers-content {
+    display: flex;
+    padding: 44px 22px 44px 22px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+}
+
+.offers-content h1 {
+    margin-top: -6px;
+    color: var(--Black, #333);
+    font-family: "Sofia Sans";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.offers-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.offers-line {
+    display: flex;
+    justify-content: space-between;
+    min-width: 422px;
+}
+
+.offers-line span {
+    color: #000;
+    font-family: "Sofia Sans";
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 29px;
+}
+
+.services-details {
+    padding: 24px 28px;
+    background-color: #E8E8E8;
+}
+
+.services-container {
+    background-image: url("../public/images/offer-background.svg");
+    background-position: center;
+    background-size: cover;
+    padding: 61px 0px 60px 0px;
+}
+
+.services-cards-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    overflow-x: auto;
+    white-space: nowrap;
+    /* scroll-behavior: smooth;  */
+}
+
+.services-card {
+    display: flex;
+    width: 353.3px;
+    padding: 22px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex-shrink: 0;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+}
+
+.services-card h1 {
+    margin-top: -6px;
+    color: var(--Black, #333);
+    text-align: center;
+    font-family: "Sofia Sans";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.service-card-content {
+    display: flex;
+    height: 49px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.service-card-content p {
+    color: var(--Black, #333);
+    font-family: "Sofia Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.services-card span {
+    color: var(--Black, #333);
+    font-family: "Sofia Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: stretch;
+}
+
+.services-card a {
+    display: flex;
+    height: 50px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: var(--Icons---brand, rgba(128, 0, 128, 0.50));
+    backdrop-filter: blur(10px);
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+/* Tab Responsive */
+@media (min-width:801px) and (max-width:1023px) {
+
+    body {
+        padding: 32px;
+    }
+
+    .content-block h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .content-block p {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .book-now-card-content {
+        padding: 24px 24px;
+        gap: 24px;
+    }
+
+    .book-now-card-content span {
+        font-size: 20px;
+        font-weight: 600;
+        width: max-content;
+    }
+
+    .book-now-card-content a {
+        font-size: 20px;
+        width: 86px;
+    }
+
+    .offers-content {
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .offers-content h1 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .offers-line span {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .services-container {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .services-card {
+        padding: 24px;
+        width: 256px;
+        height: auto;
+        gap: 24px;
+    }
+
+    .services-card h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .service-card-content p {
+        font-size: 16px;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+
+
+/*  Mobile Responsive */
+@media (max-width: 800px) {
+    body {
+        background: url('../public/images/background-img-ld.png') center / cover no-repeat fixed, rgba(167, 154, 219, 0.50);
+        backdrop-filter: blur(12.5px);
+        padding: 24px;
+    }
+
+    .slide img {
+        /* width: 100%; */
+        width: auto;
+        height: 380px;
+        display: block;
+    }
+
+    .content-block {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        background: rgba(255, 255, 255, 0.50);
+    }
+
+    .content-block h2 {
+        color: var(--Brand-1, #800080);
+        text-align: center;
+        font-family: "Sofia Sans";
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .content-block p {
+        color: var(--Brand-1, #800080);
+        text-align: center;
+        font-family: "Sofia Sans";
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0px 10px;
+    }
+
+    .book-now-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 16px;
+        padding: 24px 28px;
+        background: #E8E8E8;
+    }
+
+    .book-now-card-content {
+        width: 100%;
+        height: 160px;
+        gap: 18px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.40);
+        backdrop-filter: blur(15px);
+        padding: 0px;
+    }
+
+    .book-now-card {
+        height: 300px;
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: unset;
+        display: flex;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+
+
+    .book-now-card-content span {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .book-now-card-content a {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .offers-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 20px;
+        background-image: url(../public/images/offers-section-bg-ld.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .offers-content {
+        display: flex;
+        width: 263px;
+        height: auto;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.40);
+        backdrop-filter: blur(15px);
+    }
+
+    .offers-content h1 {
+        color: var(--Black, #333);
+        font-family: "Sofia Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .offers-line {
+        display: flex;
+        min-width: 230px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .offers-line span {
+        color: #000;
+        font-family: "Sofia Sans";
+        font-size: 15px;
+        font-weight: 600;
+        width: 76px;
+    }
+
+    .offers-details-container {
+        align-items: normal;
+    }
+
+    .offers-zone {
+        padding: 0px 24px;
+        background-color: #E8E8E8;
+    }
+
+    .services-card {
+        display: flex;
+        width: 256px;
+        padding: 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        flex-shrink: 0;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.40);
+        backdrop-filter: blur(15px);
+    }
+
+    .services-card h1 {
+        margin-top: -6px;
+        color: var(--Black, #333);
+        text-align: center;
+        font-family: "Sofia Sans";
+        font-size: 22px;
+        font-weight: 700;
+
+    }
+
+    .service-card-content p {
+        color: var(--Black, #333);
+        font-family: "Sofia Sans";
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .services-details {
+        padding: 20px 28px;
+        background-color: #E8E8E8;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .services-container {
+
+        background-position: center;
+        background-size: cover;
+        padding: 24px 0px;
+    }
+
+
+
+}

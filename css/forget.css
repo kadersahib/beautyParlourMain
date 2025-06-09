@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.main-container {
+    height: 100vh;
+    background-color: #e0d7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../public/images/login-backround-img.svg');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 1186px;
+    height: 653px;
+    background-color: white;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+}
+
+.main-forget-container {
+    width: 593px;
+    height: auto;
+    padding: 100px 40px 40px 40px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border: 2px solid #fff;
+
+}
+
+
+
+.forget-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+
+.forget-section h2 {
+    font-family: 'Sofia Sans';
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+
+.form-data input {
+    width: 513px;
+    height: 40px;
+    padding: 0px 10px;
+    border: none;
+    background-color: #F0EDF3;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+
+.data-input {
+    font-family: 'Sofia Sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: #919191;
+}
+
+.forgot-password {
+    font-size: 14px;
+    font-family: 'Sofia Sans';
+    font-weight: 600;
+    color: #800080;
+    position: relative;
+    left: 367px;
+    cursor: pointer;
+}
+
+
+.small-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.next-btn {
+    height: 50px;
+    padding: 10px 48px;
+    background-color: #A762A5;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Nunito';
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#B775BA, #B775BA),
+        linear-gradient(to right, #ffffff, #DDBCDE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 130%;
+    gap: 4px;
+}
+
+.divider .line {
+    flex: 1;
+    height: 1px;
+    background-color: #383838;
+
+}
+
+.divider .text {
+    font-size: 18px;
+    font-family: 'Sofia Sans';
+    font-weight: 600;
+    color: #333;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.google-btn {
+    width: 180px;
+    padding: 14px;
+    border: 1px solid #800080;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.40);
+    color: #800080;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.login-text a {
+    color: #800080;
+    font-family: 'Sofia Sans';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.image-section {
+    border: 2px solid #F5F1F9;
+    width: 593px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 183px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0;
+    position: relative;
+    top: 30px;
+}
+
+
+.scrolling-text {
+    position: relative;
+    top: 50px;
+    left: 80px;
+    width: 443px;
+    height: 76px;
+    text-align: center;
+    color: #800080;
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: fade 1s ease-in-out;
+}
+
+.scrolling-text p {
+    font-size: 32px;
+    font-family: 'Sofia Sans';
+}
+
+.dots {
+    margin-top: 1rem;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #DDDDDE;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #995497;
+}
+
+#bgImage {
+    height: 400px;
+    position: relative;
+    right: 160px;
+    top: 161px;
+}
+
+
+
+@media(min-width:1024px) and (max-width:1210px) {
+    .container {
+        display: flex;
+        width: 1000px;
+        height: 550px;
+        background-color: white;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.40);
+        backdrop-filter: blur(15px);
+    }
+
+    .main-forget-container {
+        width: 500px;
+        padding: 40px 20px;
+    }
+
+    .forget-section {
+        margin: 0;
+        gap: 24px;
+    }
+
+    .image-section {
+        width: 500px;
+    }
+
+    .form-data input {
+        width: 350px;
+        height: 40px;
+        padding: 4px 16px;
+        border: none;
+        background: rgba(255, 255, 255, 0.75);
+    }
+
+    .forgot-password {
+        font-size: 14px;
+        font-family: 'Sofia Sans';
+        font-weight: 600;
+        color: #800080;
+        position: relative;
+        left: 282px;
+    }
+
+    .login-section h2 {
+        font-family: 'Sofia Sans';
+        font-size: 26px;
+        font-weight: 700;
+        color: #000;
+    }
+
+
+    #bgImage {
+        height: 395px;
+        position: relative;
+        right: 200px;
+        top: 90px;
+    }
+
+    .scrolling-text {
+        width: 360px;
+    }
+
+    .scrolling-text p {
+        font-size: 24px;
+        font-family: 'Sofia Sans';
+    }
+
+
+
+
+
+
+    .form-data input {
+        width: 420px;
+        height: 40px;
+        border: none;
+        background: rgba(255, 255, 255, 0.75);
+
+    }
+}
+
+/* Tab Screen Code  */
+@media(min-width:801px) and (max-width:1023px) {
+    .container {
+        width: 748px;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .image-section {
+        width: auto;
+        height: 560px;
+        border: none;
+        padding-top: 40px;
+    }
+
+    .main-forget-container {
+        width: auto;
+        height: auto;
+        padding: 64px;
+    }
+
+    .logo {
+        width: 147px;
+    }
+
+    .scrolling-text {
+        top: 60px;
+        left: 130px;
+    }
+
+    .scrolling-text p {
+        font-size: 28px;
+        width: 500px;
+        height: 76px;
+    }
+
+    .dots {
+        margin: 0;
+    }
+
+    #bgImage {
+        height: 350px;
+        right: -127px;
+        top: 130px;
+    }
+
+    .form-data input {
+        width: 620px;
+    }
+
+}
+
+
+
+/* mobile screen code  */
+@media (min-width:300px) and (max-width:600px) {
+    .main-container {
+        padding: 0px 16px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 350px;
+        height: 812px;
+    }
+
+    .main-forget-container {
+        padding: 24px;
+        height: auto;
+        width: auto;
+    }
+
+    .image-section {
+        height: 345px;
+        width: auto;
+        border: none;
+        padding-top: 20px;
+    }
+
+    .logo {
+        width: 147px;
+    }
+
+    .scrolling-text {
+        width: 250px;
+        left: 50px;
+    }
+
+    .scrolling-text p {
+        font-size: 18px;
+        width: 259px;
+        height: 44px;
+    }
+
+    .dots {
+        margin-top: 5px;
+    }
+
+    #bgImage {
+        height: 181px;
+        position: relative;
+        left: 20px;
+        top: 70px;
+    }
+
+
+
+    .forget-section h2 {
+        font-size: 20px;
+    }
+
+    .form-data {
+        align-items: center;
+    }
+
+    .form-data input {
+        width: 285px;
+    }
+
+    .next-btn {
+        width: 192px;
+    }
+
+
+
+
+}
+
+@media (min-width:601px) and (max-width:800px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 550px;
+        height: 812px;
+    }
+
+    .main-forget-container {
+        padding: 24px;
+        height: auto;
+        width: auto;
+    }
+
+    .image-section {
+        height: 400px;
+        width: auto;
+        border: none;
+        padding-top: 15px;
+    }
+
+    .logo {
+        width: 147px;
+    }
+
+    .scrolling-text {
+        width: 350px;
+        left: 100px;
+    }
+
+    .scrolling-text p {
+        font-size: 24px;
+        width: 350px;
+        height: 44px;
+        font-family: 'Sofia Sans';
+    }
+
+    #bgImage {
+        height: 200px;
+        position: relative;
+        left: 200px;
+        top: 70px;
+    }
+
+    .forget-section h2 {
+        font-size: 20px;
+    }
+
+    .form-data {
+        align-items: center;
+    }
+
+    .form-data input {
+        width: 450px;
+    }
+
+    .next-btn {
+        width: 192px;
+    }
+
+    .divider {
+        width: 70%;
+    }
+
+
+    .google-btn {
+        width: 192px;
+    }
+}

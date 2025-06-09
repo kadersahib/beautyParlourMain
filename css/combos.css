@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Sofia Sans', sans-serif;
+    overflow-y: auto;
+    font-size: 16px;
+}
+
+body {
+    background: url(../public/images/background-img-ld.png) center / cover no-repeat fixed, rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    padding: 40px 128px 0px 128px;
+}
+
+.main-combo-container {
+    margin-top: 24px;
+}
+
+.combo-container {
+    background-color: white;
+    padding: 24px;
+}
+
+.combo-container h1 {
+    display: none;
+}
+
+.combo-card-details {
+    background-image: url('../public/images/combo.svg');
+    width: 100%;
+    background-size: cover;
+    height: 550px;
+}
+
+.combo-allCart-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding: 39px 24px;
+}
+
+.combo-card {
+    padding: 24px;
+    width: 322px;
+    height: 445px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+    flex: 0 0 auto;
+}
+
+.hover-label {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #A590B7;
+    border: 1px solid #D5CBDD;
+    color: #800080;
+    padding: 12px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    display: none;
+    font-family: "Sofia Sans";
+}
+
+.combo-card:hover .hover-label {
+    display: block;
+}
+
+.notch {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 4px;
+    margin: 0 auto 0px;
+    transition: opacity 0.3s ease;
+}
+
+.combo-card:hover .notch {
+    opacity: 0;
+}
+
+.combo-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333;
+    font-family: "Sofia Sans";
+
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Sofia Sans";
+    color: #333333;
+}
+
+.validity {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Sofia Sans";
+    color: #333333;
+}
+
+.offer-product {
+    height: 126px;
+    width: 275px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.offer-product ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.offer-product li {
+    color: #000;
+    font-family: "Sofia Sans";
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    text-align: center;
+    display: flex;
+    gap: 8px;
+}
+
+.button {
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px 30px;
+    height: 50px;
+    width: 182px;
+    color: white;
+    background-color: #9E57A0;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#B775BA, #B775BA),
+        linear-gradient(to right, #ffffff, #DDBCDE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    margin: 0 auto 0;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .combo-card-details {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 61px 0;
+        scroll-padding-left: 24px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .combo-allCart-details {
+        flex-wrap: nowrap;
+        width: max-content;
+        padding: 0px 20px;
+        gap: 24px;
+    }
+
+    .combo-card {
+        flex: 0 0 auto;
+
+    }
+}
+
+
+/* Responsive For Tab Version  */
+@media(min-width:801px) and (max-width:1023px) {
+    .combo-container h1 {
+        display: block;
+        font-size: 22px;
+        font-weight: 600;
+        color: #800080;
+    }
+
+    .combo-card-details {
+        overflow: hidden;
+        overflow-x: auto;
+        height: 461px;
+        margin-top: 16px;
+    }
+
+    .combo-allCart-details {
+        gap: 16px;
+        padding: 40px 0px;
+        justify-content: start;
+
+    }
+
+    .combo-card {
+        width: 250px;
+        height: auto;
+        padding: 16px;
+    }
+
+    .combo-card h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .price {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .offer-product {
+        margin: 0;
+        width: 200px;
+    }
+
+    .offer-product li {
+        font-size: 13px;
+        padding-top: 8px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Responsive for Mobile Version  */
+@media(max-width:800px) {
+    body {
+        width: auto;
+        padding: 24px;
+        padding-bottom: 0px;
+    }
+
+    .main-combo-container {
+        padding-bottom: 20px;
+        height: 630px;
+        overflow-y: auto;
+    }
+
+    .combo-container {
+        background-color: white;
+        padding: 12px;
+    }
+
+    .combo-container h1 {
+        display: block;
+        font-size: 22px;
+        font-weight: 600;
+        color: #800080;
+    }
+
+    .combo-card-details {
+        overflow-x: auto;
+        margin-top: 10px;
+        height: 427px;
+    }
+
+    .combo-allCart-details {
+        gap: 16px;
+        padding: 16px 0px;
+        justify-content: start;
+
+    }
+
+    .combo-card {
+        width: 250px;
+        height: 381px;
+        padding: 24px 10px;
+        gap: 20px;
+    }
+
+    .combo-card h2 {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .offer-product {
+        width: auto;
+    }
+
+    .offer-product li {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+
+}

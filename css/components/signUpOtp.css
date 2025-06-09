@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #d6c9eb;
+}
+
+.modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.otp-container {
+    padding: 24px;
+    text-align: center;
+    width: 446px;
+    height: max-content;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+}
+
+.header h2 {
+    font-family: 'Sofia Sans';
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+#close-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.illustration img {
+    width: 398px;
+    height: 180px;
+}
+
+#otp-para {
+    font-family: 'Sofia Sans';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.otp-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.otp-input {
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
+    font-family: 'Nunito';
+    text-align: center;
+    background: rgba(255, 255, 255, 0.40);
+
+    border: 2px solid white;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.otp-input {
+    border: 2px solid white;
+}
+
+.otp-input.active {
+    border-color: black;
+}
+
+.verify-btn {
+    background: #a455c5;
+    color: white;
+    width: 144px;
+    height: 50px;
+    padding: 10px 48px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto 0;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#B775BA, #B775BA),
+        linear-gradient(to right, #ffffff, #DDBCDE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+
+
+
+
+
+
+
+/* mobile version code  */
+
+@media(max-width:800px) {
+    .modal-overlay {
+        padding: 200px 25px;
+    }
+
+    .otp-container {
+        width: auto;
+        padding: 24px 16px;
+    }
+
+    .illustration img {
+        width: 270px;
+        height: 130px;
+    }
+
+    .otp-boxes {
+        gap: 22px;
+    }
+
+    .verify-btn {
+        width: 192px;
+    }
+}

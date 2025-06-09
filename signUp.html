@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up </title>
+  <link rel="stylesheet" href="./css/signUp.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="user-section">
+        <!-- <img src="./public/icons/relevo-logo-ld.svg" alt="Relevo Logo" class="logo" /> -->
+        <h2>New User Registration</h2>
+
+        <div class="user-input-data">
+          <div class="form-data">
+            <input type="text" placeholder="Username *" required />
+            <p>Username does not exist</p>
+            <input type="password" placeholder="Password *" required />
+          </div>
+          <div class="form-data">
+            <input type="text" placeholder="First Name *" id="data-input" required />
+            <input type="text" placeholder="Last Name *" id="data-input" required />
+          </div>
+          <div class="form-data">
+            <input type="text" placeholder="Email *" required />
+            <div class="input-with-icons">
+              <div class="icon-group">
+                <img src="./public/icons/global.svg" alt="Globe" class="icon">
+                <img src="./public/icons/Vector.svg" alt="Vector" class="icon" id="vector-icon">
+                <div class="divider-input"></div>
+              </div>
+              <input type="tel" id="phone" name="phone" placeholder="Mobile Number*" required>
+
+              <ul class="country-dropdown" id="countryDropdown"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="sign-div-container">
+          <button class="signup-btn">Sign Up</button>
+
+          <div class="divider">
+            <span class="line"></span>
+            <span class="text">or</span>
+            <span class="line"></span>
+          </div>
+
+          <button class="google-btn"><img src="./public/icons/google-icon-logo-svgrepo-com 1.svg"
+              class="google-image" /> Sign
+            in with Google</button>
+          <p class="login-text"> <a href="login.html">Login using Password</a></p>
+        </div>
+      </div>
+
+
+      <div class="image-section" id="imageSection">
+        <img src="./public/icons/relevo-logo-ld.svg" alt="Relevo Logo" class="logo" />
+        <div class="scrolling-text">
+          <p>Everything you need for flawless beauty, all in one place.</p>
+          <div class="dots">
+            <span class="dot active "></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="bg-image">
+          <img id="bgImage" src="./public/images/scrolling-image-1.png" alt="" class="bg-image-login">
+        </div>
+      </div>
+    </div>
+    <div id="modal-container"></div>
+  </div>
+
+
+
+  <!-- <script src="./js/components/CountryNumber.js"></script> -->
+  <script src="./js/components/imageScrolling.js"></script>
+  <script src="./js/components/otpPage.js"></script>
+  <script src="./js/components/signup.js"></script>
+</body>
+
+</html>

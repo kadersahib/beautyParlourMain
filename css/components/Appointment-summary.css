@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+
+
+/* Popup Css Code for Modal Popup */
+
+body {
+    padding: 0;
+}
+
+.modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    padding: 150px 362px;
+}
+
+.modal-content {
+    background: white;
+    padding: 24px;
+    width: 630px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+}
+
+.modal-head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-family: "Sofia Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Sofia Sans";
+}
+
+#hour {
+    font-size: 20px !important;
+    font-weight: normal;
+    font-family: "Sofia Sans";
+}
+
+.price-delete {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.price-delete p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Sofia Sans";
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #b183c4;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.btn-primary {
+    background: #A15FA9;
+    width: 251px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Nunito;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#B775BA, #B775BA),
+        linear-gradient(to right, #ffffff, #DDBCDE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+}
+
+.btn-secondary {
+    background: white;
+    width: 251px;
+    height: 50px;
+    border-radius: 30px;
+    color: #800080;
+    border: 1px solid #800080;
+    font-family: 'Nunito';
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.40);
+    /* backdrop-filter: blur(10px); */
+    cursor: pointer;
+}
+
+.book-btn {
+    margin: 10px;
+    padding: 10px 15px;
+    background: #b183c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(min-width:1024px) and (max-width:1200px) {
+    .modal-overlay {
+        padding: 150px 190px;
+    }
+}
+
+
+/* Tab Screen Responsive  */
+@media(min-width:781px) and (max-width:1023px) {
+    body {
+        padding: 0;
+    }
+
+    .modal-overlay {
+        padding: 150px 95px;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+
+    #hour {
+        font-size: 16px !important;
+    }
+}
+
+
+
+/* mobile screen responsive */
+@media(max-width:780px) {
+    body {
+        padding: 0px;
+    }
+
+    .modal-overlay {
+        padding: 150px 8px;
+    }
+
+
+    .modal-content {
+        width: auto;
+        padding: 24px 16px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .service {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .service p {
+        font-size: 18px;
+    }
+
+    #hour {
+        font-size: 16px !important;
+        font-weight: normal;
+        font-family: "Sofia Sans";
+    }
+
+    .price-delete {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .price-delete p {
+        font-weight: 500;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .btn-secondary {
+        width: 100%;
+    }
+}

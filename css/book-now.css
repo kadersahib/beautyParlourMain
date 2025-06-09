@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Sofia Sans', sans-serif;
+    overflow-y: auto;
+    font-size: 16px;
+}
+
+body {
+    background: url(../public/images/background-img-ld.png) center / cover no-repeat fixed, rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    padding: 40px 128px 0px 128px;
+}
+
+
+.main-container-details {
+    width: auto;
+    margin-top: 24px;
+    padding-bottom: 24px;
+}
+
+.container {
+    background-color: white;
+    height: 568px;
+    padding: 24px;
+}
+
+.container h1 {
+    display: none;
+}
+
+.card-details {
+    background-image: url('../public/images/offer-background.svg');
+    width: 100%;
+    background-size: cover;
+    height: 520px;
+    padding: 61px 0px;
+    overflow-x: auto;
+}
+
+.allCart-details {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: max-content;
+}
+
+.card {
+    flex: 0 0 auto;
+    padding: 16px;
+}
+
+
+.card {
+    padding: 24px;
+    width: 353px;
+    height: 399px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 26px;
+    border: 2px solid #D9D0DA;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+
+}
+
+.notch {
+    width: 35px;
+    height: 5px;
+    background: #000;
+    border-radius: 5px;
+    margin: 0 auto 0;
+}
+
+.card h2 {
+    text-align: center;
+    font-family: "Sofia Sans";
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.card p {
+    font-size: 24px;
+    font-family: Sofia Sans;
+}
+
+.line {
+    border: none;
+    border-top: 4px solid #383838;
+    width: 285px;
+}
+
+.button {
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px 30px;
+    height: 50px;
+    width: 182px;
+    color: white;
+    background-color: #8E458C;
+    border-radius: 30px;
+    margin: 0 auto 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#B775BA, #B775BA),
+        linear-gradient(to right, #ffffff, #DDBCDE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+}
+
+
+/* Tab Responsive */
+@media (min-width:801px) and (max-width:1023px) {
+    .container {
+        height: auto;
+    }
+
+    .container h1 {
+        display: block;
+        font-family: 'Sofia Sans';
+        font-weight: 600;
+        font-size: 22px;
+        color: #800080;
+    }
+
+    .card-details {
+        height: 388px;
+        margin-top: 16px;
+        padding: 20px 0px;
+    }
+
+    .allCart-details {
+        gap: 12px;
+    }
+
+    .card {
+        width: 256px;
+        height: max-content;
+        gap: 24px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+        width: 208px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .line {
+        width: 100%;
+        border-top: 3px solid #383838
+    }
+
+    #hour {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Sofia Sans';
+    }
+
+    #price {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Sofia Sans';
+    }
+}
+
+
+
+/* Responsive code for mobile  */
+
+@media (max-width:800px) {
+    body {
+        width: auto;
+        padding: 24px;
+        padding-bottom: 0px;
+    }
+
+    .main-container-details {
+        height: 630px;
+        overflow-y: auto;
+    }
+
+    .container {
+        background-color: white;
+        height: auto;
+        padding: 16px;
+    }
+
+    .container h1 {
+        display: block;
+        font-family: 'Sofia Sans';
+        font-weight: 600;
+        font-size: 22px;
+        color: #800080;
+        padding-bottom: 10px;
+    }
+
+    .allCart-details {
+        display: flex;
+        gap: 16px;
+        width: auto;
+    }
+
+    .card-details {
+        padding: 35px 0px;
+        overflow-x: auto;
+        height: 363px;
+    }
+
+    .card {
+        width: 256px;
+        height: max-content;
+        gap: 16px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .card p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .button {
+        width: 100%;
+        height: 45px;
+        padding: 0;
+    }
+
+    .line {
+        border: none;
+        border-top: 3px solid #383838;
+        width: auto;
+    }
+
+
+
+
+
+}

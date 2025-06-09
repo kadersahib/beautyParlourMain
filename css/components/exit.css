@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+.model-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    padding: 300px 471px;
+}
+
+
+.model-content {
+    width: 420px;
+    height: auto;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.model-head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-head p {
+    font-size: 24px;
+    font-family: 'Sofia Sans';
+    font-weight: 600;
+    margin: 0;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.model-para p {
+    font-family: 'Sofia Sans';
+    font-size: 20px;
+    font-weight: 400;
+    width: 372px;
+    height: 48px;
+    text-align: center;
+}
+
+.model-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+
+.btn-1 {
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #800080;
+    background: rgba(255, 255, 255, 0.40);
+    color: #800080;
+    cursor: pointer;
+}
+
+.btn-2 {
+    width: 170px;
+    height: 50px;
+    padding: 10px 24px;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#B775BA, #B775BA),
+        linear-gradient(to right, #ffffff, #DDBCDE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-color: #A761AB;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+@media(min-width:1024px) and (max-width:1220px) {
+    body {
+        padding: 0;
+    }
+
+    .model-overlay {
+        padding: 320px 280px;
+    }
+}
+
+@media(min-width:801px) and (max-width:1023px) {
+
+    .model-overlay {
+        padding: 320px 164px;
+    }
+}
+
+/* mobile screen code */
+@media(max-width:800px) {
+
+    body {
+        padding: 0;
+    }
+
+    .model-content {
+        width: auto;
+        padding: 24px 16px;
+    }
+
+    .model-overlay {
+        padding: 240px 24px;
+    }
+
+    .model-para p {
+        width: auto;
+        margin: 0;
+        text-align: start;
+    }
+
+    .model-btn {
+        gap: 10px;
+    }
+
+    .btn-1 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .btn-2 {
+        width: 100%;
+    }
+}

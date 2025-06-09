@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.model-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    padding: 150px 480px;
+}
+
+.modal {
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+    width: 420px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Sofia Sans';
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    color: #333;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.service-time-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.service-time-details h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Sofia Sans';
+}
+
+.service-time-details p {
+    margin: 0;
+    font-family: 'Sofia Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.price {
+    font-family: 'Sofia Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ok-btn {
+    width: 122px;
+    height: 50px;
+    padding: 10px 48px;
+    background-color: #AA66B0;
+    color: white;
+    font-size: 18px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    margin: 0 auto 0;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#B775BA, #B775BA),
+        linear-gradient(to right, #ffffff, #DDBCDE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.content-scroll {
+    max-height: 125px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.content-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 20px;
+}
+
+.content-scroll::-webkit-scrollbar-thumb {
+    background-color: #B369C3;
+    border-radius: 20px;
+}
+
+@media(min-width:1024px) and (max-width:1200px) {
+    .model-overlay {
+        padding: 150px 289px;
+    }
+}
+
+@media(min-width:801px) and (max-width:1023px) {
+    .model-overlay {
+        padding: 150px 195px;
+    }
+}
+
+/* mobile screen size code  */
+@media(max-width:800px) {
+    body {
+        padding: 0px;
+    }
+
+    .model-overlay {
+        padding: 150px 24px;
+    }
+
+    .modal {
+        width: auto;
+        padding: 24px 16px;
+    }
+
+    .content-scroll {
+        max-height: 100px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .service-time-details p {
+        font-size: 15px;
+    }
+
+    .ok-btn {
+        width: 192px;
+    }
+}

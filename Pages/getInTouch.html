@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetInTouch</title>
+    <link rel="stylesheet" href="./css/getInTouch.css">
+    <link rel="stylesheet" href="./css/components/navbar.css">
+</head>
+
+<body>
+
+    <header id="navbar-container">
+        <!-- Navbar will be loaded here by JavaScript -->
+    </header>
+
+    <div class="getInTouch-container">
+        <div class="container-header">
+            <div class="top-bar"></div>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="main-section">
+            <section class="section-1">
+                <div class="section-head">
+                    <h3>Contact Details</h3>
+                </div>
+
+                <div class="section-content">
+                    <div class="location">
+                        <p>230, 5th Cross Road, Indiranagar,</p>
+                        <p> Bengaluru, Karnataka — 560038</p>
+                        <p> India</p>
+                    </div>
+
+                    <div class="timing">
+                        <h4>Opening Hours</h4>
+                        <p> Mon – Fri: 7am – 10pm \ Saturday:8am-
+                        <p> 10pm \ Sunday: 8am – 11pm</p>
+                    </div>
+
+                </div>
+            </section>
+            <span class="seperator"></span>
+            <section class="section-2">
+                <h3>Client Details</h3>
+                <form>
+                    <div class="names">
+                        <input type="text" placeholder="First Name*" required />
+                        <input type="text" placeholder="Last Name*" required />
+                    </div>
+                    <div class="emailandmobile">
+                        <div class="div">
+                            <input type="email" placeholder="Email *" required />
+                        </div>
+                        <div class="input-with-iconss">
+                            <div class="icon-group">
+                                <img src="./public/icons/global.svg" alt="Globe" class="icon">
+                                <img src="./public/icons/Vector.svg" alt="Vector" class="icon" id="vector-icon">
+                                <div id="divider"></div>
+                            </div>
+                            <input type="tel" id="phone" name="phone" placeholder="Mobile Number*" required>
+                            <ul class="country-dropdown" id="countryDropdown"></ul>
+                        </div>
+                    </div>
+
+                    <textarea placeholder="Add your Message"></textarea>
+                </form>
+                <button class="submit">Submit</button>
+            </section>
+        </div>
+    </div>
+
+
+    <script type="module" src="./js/scripts/main.js"></script>
+
+    <!-- <script src="./js/components/CountryNumber.js"></script> -->
+
+
+
+</body>
+
+</html>

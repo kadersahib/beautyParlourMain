@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Sofia Sans', sans-serif;
+    overflow-y: auto;
+    font-size: 16px;
+}
+
+
+body {
+    background: url('../../public/images/background-img-ld.png') center / cover no-repeat fixed, rgba(167, 154, 219, 0.50);
+    backdrop-filter: blur(12.5px);
+    padding: 40px 128px 30px 128px;
+}
+
+.getInTouch-container {
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+    border: 2px solid #fff;
+    margin-top: 24px;
+    color: #333;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.top-bar {
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+    margin: 0 auto 10px;
+    border-radius: 2px;
+}
+
+.container-header h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+/* Contact Section */
+.section-head h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-content p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.timing h4 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Divider */
+#divider {
+    height: 17px;
+    border-radius: 2px;
+    border-right: 2px solid #919191;
+    margin-left: 5px;
+}
+
+.section-2 h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.names {
+    display: flex;
+    gap: 32px;
+}
+
+.emailandmobile {
+    display: flex;
+    gap: 32px;
+}
+
+input {
+    padding: 12px 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+    width: 350px;
+}
+
+textarea {
+    padding: 12px 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+    height: 80px;
+    resize: none;
+}
+
+.input-with-iconss {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 0px 16px;
+    position: relative;
+    width: 350px;
+}
+
+
+.icon-group {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-right: 10px;
+}
+
+#vector-icon {
+    width: 12px;
+    height: 7px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+#divider {
+    height: 20px;
+    border-right: 2px solid #919191;
+    border-radius: 30px;
+}
+
+input[type="tel"] {
+    font-family: 'Sofia Sans';
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    padding-left: 0px;
+    background: transparent;
+}
+
+/* Submit Button */
+.submit {
+    padding: 10px 48px;
+    border-radius: 30px;
+    background-color: #AA66AF;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid white;
+    font-family: 'Nunito';
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seperator {
+    width: 3px;
+    background-color: #A3A3A3;
+    margin: 0 16px;
+
+}
+
+.country-dropdown {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.40);
+    border: 2px solid #E7DAED;
+    width: 266px;
+    height: 216px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 58px;
+    left: -2px;
+    font-size: 16px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 600;
+}
+
+.country-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.country-dropdown::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.country-dropdown::-webkit-scrollbar-thumb {
+    background-color: #B46DC6;
+    border-radius: 4px;
+}
+
+.country-dropdown li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.country-dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.country-dropdown img {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@media (min-width:1024px) and (max-width:1300px) {
+    input {
+        width: 240px;
+    }
+
+    .section-2 {
+        width: 500px;
+    }
+
+    .input-with-iconss {
+        width: 240px;
+    }
+
+}
+
+
+
+
+/* Tab Responsive  */
+@media(min-width:801px) and (max-width:1023px) {
+
+    body {
+        padding: 32px;
+    }
+
+    .input-with-iconss {
+        width: 205px;
+    }
+
+    input {
+        width: 205px;
+    }
+
+    .section-1 {
+        width: 300px;
+    }
+
+    .section-content p {
+        font-size: 16px;
+        margin: 0;
+        width: 230px;
+        font-weight: 400;
+    }
+
+    .names {
+        gap: 24px;
+    }
+
+    .emailandmobile {
+        gap: 24px;
+    }
+
+}
+
+
+
+
+
+/* Mobile Responsive  */
+@media (max-width:800px) {
+    body {
+        padding: 24px;
+    }
+
+    /* getInTouch Code */
+
+    .getInTouch-container {
+        background: rgba(255, 255, 255, 0.40);
+    }
+
+
+    .top-bar {
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .container-header h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    .section-content p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        width: 280px;
+    }
+
+    .timing h4 {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .seperator {
+        border-radius: 2px;
+        border: 1.3px solid #A3A3A3;
+        margin-left: 1px;
+        width: auto;
+        margin: 10px 0px;
+    }
+
+    .section-2 h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .names {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .emailandmobile {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    input,
+    textarea {
+        width: -webkit-fill-available;
+    }
+
+    .input-with-iconss {
+        width: auto;
+    }
+
+
+}

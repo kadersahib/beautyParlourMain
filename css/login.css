@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../public/images/login-backround-img.svg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  width: 1186px;
+  height: 625px;
+  background-color: white;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.40);
+  backdrop-filter: blur(15px);
+}
+
+.login-section {
+  width: 593px;
+  height: auto;
+  padding: 100px 20px 40px 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  border: 2px solid #ECE6F4;
+
+}
+
+
+
+.login-section h2 {
+  font-family: 'Sofia Sans';
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+}
+
+.form-data input {
+  width: 433px;
+  height: 40px;
+  padding: 4px 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.75);
+
+}
+
+.form-data input:first-child {
+  margin-bottom: 32px;
+
+}
+
+#data-input {
+  font-family: 'Sofia Sans';
+  font-size: 14px;
+  font-weight: 600;
+  color: #919191;
+}
+
+.forgot-password {
+  font-size: 14px;
+  font-family: 'Sofia Sans';
+  font-weight: 600;
+  color: #800080;
+  position: relative;
+  left: 367px;
+}
+
+.login-btn {
+  width: 142px;
+  height: 50px;
+  padding: 10px 48px;
+  background-color: #B775BA;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Nunito';
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(#B775BA, #B775BA),
+    linear-gradient(to right, #ffffff, #DDBCDE);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 4px;
+}
+
+.divider .line {
+  flex: 1;
+  height: 1px;
+  background-color: #383838;
+
+}
+
+.divider .text {
+  font-size: 18px;
+  font-family: 'Sofia Sans';
+  font-weight: 600;
+  color: #333;
+}
+
+.div-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.google-btn {
+  width: 192px;
+  height: 50px;
+  border: 1px solid #800080;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.40);
+  color: #800080;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.signup-text {
+  font-size: 14px;
+  font-family: 'Sofia Sans';
+  font-weight: 400;
+}
+
+.signup-text a {
+  color: #800080;
+  font-family: 'Sofia Sans';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+.image-section {
+  border: 2px solid #F5F1F9;
+  width: 593px;
+  overflow: hidden;
+}
+
+.logo {
+  width: 183px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0;
+  position: relative;
+  top: 30px;
+}
+
+
+.scrolling-text {
+  position: relative;
+  top: 50px;
+  left: 80px;
+  width: 443px;
+  height: 76px;
+  text-align: center;
+  color: #800080;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: fade 1s ease-in-out;
+}
+
+.scrolling-text p {
+  font-size: 32px;
+  font-family: 'Sofia Sans';
+}
+
+.scrolling-text p:nth-child(2) {
+  display: none;
+}
+
+.scrolling-text p:nth-child(3) {
+  display: none;
+}
+
+.dots {
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #DDDDDE;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #995497;
+}
+
+#bgImage {
+  height: 400px;
+  position: relative;
+  right: 144px;
+  top: 140px;
+}
+
+
+@media(min-width:1024px) and (max-width:1210px) {
+  .container {
+    display: flex;
+    width: 1000px;
+    height: 580px;
+    background-color: white;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+  }
+
+  .login-section {
+    width: 500px;
+    height: auto;
+    backdrop-filter: blur(10px);
+    padding: 70px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border: 2px solid #ECE6F4;
+  }
+
+  .image-section {
+    width: 500px;
+  }
+
+  .form-data input {
+    width: 350px;
+    height: 40px;
+    padding: 4px 16px;
+    border: none;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .forgot-password {
+    font-size: 14px;
+    font-family: 'Sofia Sans';
+    font-weight: 600;
+    color: #800080;
+    position: relative;
+    left: 282px;
+  }
+
+  .login-section h2 {
+    font-family: 'Sofia Sans';
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+  }
+
+
+  #bgImage {
+    height: 395px;
+    position: relative;
+    right: 200px;
+    top: 90px;
+  }
+
+  .scrolling-text {
+    width: 360px;
+  }
+
+  .scrolling-text p {
+    font-size: 24px;
+  }
+
+
+}
+
+
+
+
+
+
+/* Tab Version of Code  */
+@media(min-width:801px) and (max-width:1023px) {
+  .container {
+    width: 748px;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .login-section {
+    width: auto;
+    height: auto;
+    gap: 24px;
+    padding: 80px 64px 20px 64px;
+  }
+
+  .image-section {
+    width: auto;
+    height: 560px;
+    border: none;
+    padding-top: 20px;
+  }
+
+  .login-section h2 {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 143px;
+  }
+
+  .scrolling-text {
+    top: 60px;
+    left: 130px;
+  }
+
+  .scrolling-text p {
+    font-size: 28px;
+    width: 500px;
+    height: 76px;
+  }
+
+  .dots {
+    margin: 0;
+  }
+
+  #bgImage {
+    height: 350px;
+    right: -127px;
+    top: 130px;
+  }
+
+  #text-image {
+    top: 80px;
+  }
+
+
+  .form-data input {
+    width: 620px;
+  }
+
+  .forgot-password {
+    position: relative;
+    left: 550px;
+  }
+
+  .divider {
+    width: 50%;
+  }
+
+  .signup-text {
+    margin: 0 auto 0;
+  }
+
+
+}
+
+
+
+
+/* mobile version of code  */
+@media(min-width:300px) and (max-width:500px) {
+  .main-container {
+    padding: 0px 24px;
+  }
+
+  .container {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .login-section {
+    width: auto;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .login-section h2 {
+    font-size: 22px;
+  }
+
+
+  .image-section {
+    border: none;
+    height: 345px;
+    overflow: hidden;
+    width: 345px;
+  }
+
+  /* .bg-image {
+    overflow: hidden;
+  } */
+
+  #bgImage {
+    height: 182px;
+    position: relative;
+    left: 0px;
+    top: 80px;
+  }
+
+  .logo {
+    width: 147px;
+    position: relative;
+    top: 40px;
+  }
+
+  .scrolling-text {
+    left: 50px;
+    width: 235px;
+  }
+
+  .scrolling-text p {
+    font-size: 18px;
+    width: 259px;
+    height: 44px;
+  }
+
+  .dots {
+    margin-top: 5px;
+  }
+
+  .form-data input {
+    width: 245px;
+  }
+
+  .forgot-password {
+    position: relative;
+    left: 177px;
+  }
+
+  .login-btn {
+    width: 192px;
+  }
+
+
+  .google-btn {
+    width: 192px;
+  }
+
+  .signup-text {
+    margin: 0 auto 0;
+  }
+
+
+}
+
+@media(min-width:501px) and (max-width:800px) {
+  .main-container {
+    padding: 24px 16px;
+  }
+
+  .container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .login-section {
+    width: auto;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .login-section h2 {
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 143px;
+    padding-top: 10px;
+  }
+
+  .image-section {
+    border: none;
+    /* width: auto; */
+  }
+
+  .bg-image {
+    overflow: hidden;
+  }
+
+
+  #bgImage {
+    right: 50px;
+    top: 80px;
+    height: 350px;
+  }
+
+  .forgot-password {
+    position: relative;
+    left: 364px;
+  }
+
+
+
+
+  .signup-text {
+    margin: 0 auto 0;
+  }
+
+
+}

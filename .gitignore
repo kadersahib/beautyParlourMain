@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# npm debug file
+npm-debug.log*
+
+# Optional: build output (if applicable)
+dist/
+build/
+node_modules
