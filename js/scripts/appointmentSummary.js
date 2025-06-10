@@ -89,7 +89,7 @@ function setupSummaryModal(container, appointments) {
       <div class="price-delete">
         <p>${appointment.price}</p>
         <span class="delete-icon" data-index="${index}">
-          <img src="../public/icons/delete-icon.svg" alt="delete">
+          <img src="./public/icons/delete-icon.svg" alt="delete">
         </span>
       </div>
     `;
