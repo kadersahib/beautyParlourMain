@@ -193,7 +193,7 @@ body {
 
 
 .service-list {
-    max-height: 200px;
+    max-height: 150px;
     overflow-y: auto;
     padding-right: 10px;
 }

@@ -33,7 +33,6 @@ body {
 .main {
     position: relative;
     z-index: 2;
-    padding: 24px 0px 0px 0px;
     width: auto;
 }
 

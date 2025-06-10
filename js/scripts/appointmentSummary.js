@@ -22,7 +22,7 @@ export  function setupBookingButtons() {
         const html = await res.text();
         modalContainer.innerHTML = html;
 
-        document.getElementById('navbar-container').style.display = 'none';
+        // document.getElementById('navbar-container').style.display = 'none';
         document.body.classList.add('modal-open');
 
         setupSummaryModal(modalContainer, appointments);
@@ -61,11 +61,15 @@ function setupSummaryModal(container, appointments) {
   const modalOverlay = container.querySelector('.modal-overlay');
   modalOverlay.style.display = '';
 
+   // Hide hamburger icon behind modal
+  const hamburger = document.getElementById('hamburger'); // Adjust if using a class
+  if (hamburger) hamburger.style.zIndex = '0';
+  
   const closeBtn = container.querySelector('.close');
   closeBtn?.addEventListener('click', () => {
     modalOverlay.style.display = 'none';
     container.innerHTML = '';
-    document.getElementById('navbar-container').style.display = '';
+    // document.getElementById('navbar-container').style.display = '';
     document.body.classList.remove('modal-open');
     localStorage.removeItem('appointments');
   });
