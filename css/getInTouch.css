@@ -287,6 +287,10 @@ input[type="tel"] {
         gap: 24px;
     }
 
+    .country-dropdown {
+        height: 150px;
+    }
+
 }
 
 
