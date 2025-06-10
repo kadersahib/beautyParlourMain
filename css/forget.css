@@ -367,7 +367,7 @@
 /* mobile screen code  */
 @media (min-width:300px) and (max-width:600px) {
     .main-container {
-        padding: 0px 16px;
+        padding: 24px;
     }
 
     .container {
@@ -412,7 +412,7 @@
     #bgImage {
         height: 181px;
         position: relative;
-        left: 20px;
+        left: 30px;
         top: 70px;
     }
 
@@ -440,7 +440,9 @@
 }
 
 @media (min-width:601px) and (max-width:800px) {
-
+    .main-container {
+        padding: 24px;
+    }
 
     .container {
         display: flex;

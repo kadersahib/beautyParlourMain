@@ -360,6 +360,7 @@ input[type="tel"] {
         position: relative;
         right: 180px;
         top: 90px;
+
     }
 
     .scrolling-text {
@@ -526,7 +527,7 @@ input[type="tel"] {
     #bgImage {
         height: 181px;
         position: relative;
-        left: 20px;
+        left: 30px;
         top: 50px;
     }
 
