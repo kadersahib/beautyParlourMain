@@ -313,7 +313,7 @@
 @media(min-width:801px) and (max-width:1023px) {
     .container {
         width: 748px;
-        height: auto;
+        height: 812px;
         display: flex;
         flex-direction: column-reverse;
     }
