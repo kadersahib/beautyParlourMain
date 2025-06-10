@@ -256,7 +256,7 @@ input[type="tel"] {
 @media(min-width:801px) and (max-width:1023px) {
 
     body {
-        padding: 32px;
+        padding: 33px;
         overflow-x: hidden;
     }
 
@@ -296,7 +296,7 @@ input[type="tel"] {
 /* Mobile Responsive  */
 @media (max-width:800px) {
     body {
-        padding: 24px;
+        padding: 25px;
         overflow-x: hidden;
     }
 
