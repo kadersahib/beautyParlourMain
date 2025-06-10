@@ -1,12 +1,10 @@
 
-
-
 export async function countryData(container = document) {
   const iconGroup = container.querySelector('.icon-group');
   const dropdown = container.querySelector('#countryDropdown');
   const phoneInput = container.querySelector('#phone');
 
-  console.log('countryData running...', { iconGroup, dropdown, phoneInput });
+  // console.log('countryData running...', { iconGroup, dropdown, phoneInput });
 
   if (!iconGroup || !dropdown || !phoneInput) return;
 
@@ -14,7 +12,7 @@ export async function countryData(container = document) {
   iconGroup.dataset.listenerAttached = "true";
 
   iconGroup.addEventListener('click', async () => {
-    console.log('iconGroup clicked');
+    // console.log('iconGroup clicked');
 
     // If dropdown already initialized, just toggle visibility
     if (dropdown.dataset.initialized === "true") {
@@ -25,7 +23,7 @@ export async function countryData(container = document) {
     try {
       const response = await fetch('./js/jsonData/countries.json');
       const countries = await response.json();
-      console.log('Loaded countries:', countries);
+      // console.log('Loaded countries:', countries);
 
       dropdown.innerHTML = '';
       countries.sort((a, b) => a.name.localeCompare(b.name)).forEach(country => {

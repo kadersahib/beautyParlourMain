@@ -375,11 +375,12 @@ input[type="tel"] {
     }
 
     .form-data input {
-        width: auto;
+        width: 170px;
     }
 
     .input-with-icons {
         padding: 0px 4px;
+        width: 200px;
     }
 
 }
