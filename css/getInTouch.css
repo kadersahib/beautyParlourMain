@@ -288,7 +288,7 @@ input[type="tel"] {
     }
 
     .country-dropdown {
-        height: 150px;
+        height: 170px;
     }
 
     .country-dropdown li {
@@ -382,5 +382,12 @@ input[type="tel"] {
         width: auto;
     }
 
+    .country-dropdown {
+        height: 170px;
+    }
+
+    .country-dropdown li {
+        padding: 8px;
+    }
 
 }
