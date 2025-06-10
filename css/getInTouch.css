@@ -289,6 +289,7 @@ input[type="tel"] {
 
     .country-dropdown {
         height: 170px;
+        width: 210px;
     }
 
     .country-dropdown li {
@@ -296,10 +297,6 @@ input[type="tel"] {
     }
 
 }
-
-
-
-
 
 /* Mobile Responsive  */
 @media (max-width:800px) {
@@ -384,10 +381,9 @@ input[type="tel"] {
 
     .country-dropdown {
         height: 170px;
+        width: 240px;
     }
 
-    .country-dropdown li {
-        padding: 8px;
-    }
+
 
 }
