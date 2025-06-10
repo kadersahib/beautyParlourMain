@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    background: url("../public/images/background-img-ld.png") center/cover no-repeat fixed,
+    background: url("../../public/images/background-img-ld.png") center/cover no-repeat fixed,
         rgba(167, 154, 219, 0.50);
     backdrop-filter: blur(12.5px);
     padding: 40px 128px 20px 128px;

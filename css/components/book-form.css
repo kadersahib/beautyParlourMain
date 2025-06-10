@@ -356,7 +356,7 @@ body {
 
     .booking-container {
         width: 630px;
-        height: 792px;
+        height: auto;
     }
 
     form {
