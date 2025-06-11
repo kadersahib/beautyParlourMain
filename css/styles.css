@@ -429,6 +429,10 @@ body {
         height: 380px;
     }
 
+    .slide img {
+        object-fit: fill;
+    }
+
     .content-block {
         position: absolute;
         top: 58%;
