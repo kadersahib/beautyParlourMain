@@ -2,15 +2,14 @@
 import { loadNavbar } from './scripts/navbar.js';
 import { setupBookingButtons } from './scripts/appointmentSummary.js';
 import { getIntouch } from './components/getInTouch.js';
-import { setupLoginTriggers } from './scripts/demopagelogin.js';
+import { setupDemoTriggers } from './scripts/demoPopup.js';
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     await loadNavbar();
-    setupLoginTriggers();
+    setupDemoTriggers();
     setupBookingButtons();
     getIntouch();
 
-    
 
   } catch (error) {
     console.error('Error initializing page:', error);

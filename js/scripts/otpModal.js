@@ -1,6 +1,6 @@
 // otpModal.js
-import { successPage } from './successModal.js';
-import { otpInputColor } from '../components/otpInputColor.js';
+// import { successPage } from './successModal.js';
+// import { otpInputColor } from '../components/otpInputColor.js';
 
 export function otpModel() {
   const modalContainer = document.getElementById('modal-container');

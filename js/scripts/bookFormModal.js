@@ -1,6 +1,8 @@
 
-import { otpModel } from './otpModal.js';
+// import { otpModel } from './otpModal.js';
 import { countryData } from '../components/countryData.js';
+import { setupDemoTriggers } from './demoPopup.js';
+
 
 export function OpenBookFormModal() {
   const modalContainer = document.getElementById('modal-container');
@@ -30,19 +32,37 @@ export function OpenBookFormModal() {
         });
       }
 
+      // const nextBtn = modalContainer.querySelector('#next-btn');
+      // if (nextBtn) {
+      //   nextBtn.addEventListener('click', () => {
+      //     const form = modalContainer.querySelector('#bookingForm');
+      //     if (form) {
+      //       if (form.checkValidity()) {
+      //         otpModel();  // Open OTP modal on valid form
+      //       } else {
+      //         form.reportValidity();
+      //       }
+      //     } else {
+      //       console.warn('Form not found in modal');
+      //     }
+      //   });
+      // }
+
+        // ✅ Show demo page on clicking Next button
       const nextBtn = modalContainer.querySelector('#next-btn');
       if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-          const form = modalContainer.querySelector('#bookingForm');
-          if (form) {
-            if (form.checkValidity()) {
-              otpModel();  // Open OTP modal on valid form
-            } else {
-              form.reportValidity();
-            }
-          } else {
-            console.warn('Form not found in modal');
-          }
+        nextBtn.addEventListener('click', async () => {
+          const demoContainer = document.getElementById('demoContainer');
+          if (demoContainer) await setupDemoTriggers(demoContainer);
+        });
+      }
+
+        // ✅ Show demo page on clicking Login button
+      const loginBtn = modalContainer.querySelector('.login-btn');
+      if (loginBtn) {
+        loginBtn.addEventListener('click', async () => {
+          const demoContainer = document.getElementById('demoContainer');
+          if (demoContainer) await setupDemoTriggers(demoContainer);
         });
       }
 
