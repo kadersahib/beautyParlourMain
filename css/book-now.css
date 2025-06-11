@@ -43,6 +43,12 @@ body {
     height: 520px;
     padding: 61px 0px;
     overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.card-details::-webkit-scrollbar {
+    display: none;
 }
 
 .allCart-details {
@@ -151,6 +157,7 @@ body {
         width: 256px;
         height: max-content;
         gap: 24px;
+
     }
 
     .card h2 {
