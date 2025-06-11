@@ -6,7 +6,7 @@ setInterval(() => {
   slides[currentIndex].classList.remove('active');
   currentIndex = (currentIndex + 1) % slides.length;
   slides[currentIndex].classList.add('active');
-}, 3000);
+}, 2000);
 document.addEventListener('DOMContentLoaded', () => {
   const bookNowButtons = document.querySelectorAll('.services-card .book-now-btn');
   const sliderContainer = document.querySelector('.slider-container');

@@ -1,6 +1,6 @@
 export async function loadNavbar() {
     try {
-      const res = await fetch('../Pages/navbar.html');
+      const res = await fetch('Pages/navbar.html');
       const html = await res.text();
       document.getElementById('navbar-container').innerHTML = html;
   
