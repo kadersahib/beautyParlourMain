@@ -33,6 +33,13 @@
     font-weight: 600;
 }
 
+.nav-item-text-login {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
 .nav-item-text:hover,
 .nav-item-text.active {
     color: #800080;
