@@ -238,10 +238,14 @@ body {
     display: flex;
     align-items: center;
     gap: 24px;
-
     overflow-x: auto;
-    white-space: nowrap;
-    /* scroll-behavior: smooth;  */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.services-cards-container::-webkit-scrollbar {
+    display: none;
 }
 
 .services-card {
@@ -374,9 +378,8 @@ body {
     }
 
     .services-card {
-        padding: 24px;
         width: 256px;
-        height: auto;
+        height: 331px;
         gap: 24px;
     }
 
@@ -478,8 +481,6 @@ body {
         width: 100%;
     }
 
-
-
     .book-now-card-content span {
         font-size: 22px;
         font-weight: 600;
@@ -551,7 +552,7 @@ body {
     .services-card {
         display: flex;
         width: 256px;
-        padding: 24px;
+        height: auto;
         flex-direction: column;
         align-items: center;
         gap: 24px;
@@ -561,13 +562,13 @@ body {
         backdrop-filter: blur(15px);
     }
 
-    .services-card h1 {
+    .services-card h2 {
         margin-top: -6px;
         color: var(--Black, #333);
         text-align: center;
         font-family: "Sofia Sans";
         font-size: 22px;
-        font-weight: 700;
+        font-weight: 600;
 
     }
 
