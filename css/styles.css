@@ -157,8 +157,8 @@ body {
 .book-now-card-content a {
     color: #000;
     font-family: "Sofia Sans";
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 400;
     text-decoration: none;
     height: 29px;
 }
@@ -190,9 +190,9 @@ body {
     margin-top: -6px;
     color: var(--Black, #333);
     font-family: "Sofia Sans";
-    font-size: 1.75rem;
+    font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -213,9 +213,13 @@ body {
 .offers-line span {
     color: #000;
     font-family: "Sofia Sans";
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 500;
     height: 29px;
+}
+
+.offers-line span:nth-child(2) {
+    font-weight: 400;
 }
 
 .services-details {
@@ -253,14 +257,14 @@ body {
     backdrop-filter: blur(15px);
 }
 
-.services-card h1 {
+.services-card h2 {
     margin-top: -6px;
     color: var(--Black, #333);
     text-align: center;
     font-family: "Sofia Sans";
-    font-size: 1.75rem;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -347,6 +351,7 @@ body {
     .book-now-card-content a {
         font-size: 20px;
         width: 86px;
+        font-weight: 400;
     }
 
     .offers-content {
