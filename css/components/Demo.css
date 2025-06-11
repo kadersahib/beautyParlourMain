@@ -80,6 +80,7 @@
     background-clip: padding-box, border-box;
     background-color: #A761AB;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .btn-2 {
@@ -93,6 +94,7 @@
     border: 1px solid #800080;
     background: rgba(255, 255, 255, 0.40);
     color: #800080;
+    cursor: pointer;
 
 }
 
