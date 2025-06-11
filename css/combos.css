@@ -37,6 +37,7 @@ body {
     width: 100%;
     background-size: cover;
     height: 550px;
+    scrollbar-width: none;
 }
 
 .combo-allCart-details {
@@ -178,8 +179,8 @@ body {
         overflow-x: auto;
         overflow-y: hidden;
         padding: 61px 0;
-        scroll-padding-left: 24px;
-        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
     .combo-allCart-details {
@@ -210,6 +211,7 @@ body {
         overflow-x: auto;
         height: 461px;
         margin-top: 16px;
+        scrollbar-width: none;
     }
 
     .combo-allCart-details {
