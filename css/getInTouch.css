@@ -125,6 +125,7 @@ textarea {
     background: rgba(255, 255, 255, 0.6);
     height: 80px;
     resize: none;
+    font-family: 'Sofia Sans';
 }
 
 .input-with-iconss {
@@ -384,6 +385,7 @@ input[type="tel"] {
     input,
     textarea {
         width: -webkit-fill-available;
+        font-family: "sofia sans";
     }
 
     .input-with-iconss {
