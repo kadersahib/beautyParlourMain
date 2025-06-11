@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-body {
+/* body {
     padding: 0;
-}
+} */
 
 .model-overlay {
     position: absolute;

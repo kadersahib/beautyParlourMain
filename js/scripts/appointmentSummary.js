@@ -22,7 +22,6 @@ export  function setupBookingButtons() {
         const html = await res.text();
         modalContainer.innerHTML = html;
 
-        // document.getElementById('navbar-container').style.display = 'none';
         document.body.classList.add('modal-open');
 
         setupSummaryModal(modalContainer, appointments);

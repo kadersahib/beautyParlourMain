@@ -65,6 +65,7 @@ async function openDemoPage(demoContainer) {
 
     const demoHtml = await response.text();
     demoContainer.innerHTML = demoHtml;
+    document.body.classList.add('modal-open');
 
     const overlay = demoContainer.querySelector('.model-overlay');
     if (overlay) overlay.style.display = '';
@@ -80,9 +81,7 @@ async function openDemoPage(demoContainer) {
 
     const closeOverlay = () => {
       if (overlay) overlay.style.display = 'none';
-      setTimeout(() => {
-        location.reload();
-      }, 300);
+      
     };
 
     demoContainer.querySelector('.btn-2')?.addEventListener('click', closeOverlay);
