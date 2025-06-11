@@ -57,14 +57,14 @@ function extractServiceDetails(button) {
   return { title, price, validity };
 }
 
-function setupSummaryModal(container, appointments) {
+export function setupSummaryModal(container, appointments) {
   const modalOverlay = container.querySelector('.modal-overlay');
   modalOverlay.style.display = '';
 
    // Hide hamburger icon behind modal
   const hamburger = document.getElementById('hamburger'); // Adjust if using a class
   if (hamburger) hamburger.style.zIndex = '0';
-  
+
   const closeBtn = container.querySelector('.close');
   closeBtn?.addEventListener('click', () => {
     modalOverlay.style.display = 'none';
