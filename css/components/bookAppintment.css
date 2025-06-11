@@ -400,6 +400,7 @@ body {
         flex-direction: column;
         height: 678px;
         overflow-y: auto;
+        scrollbar-width: none;
     }
 
     .calendar-grid {

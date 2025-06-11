@@ -407,14 +407,10 @@ body {
         width: auto;
         height: 690px;
         overflow-y: auto;
-
+        scrollbar-width: none;
     }
 
-    .form-header {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
+
 
     .form-content {
         width: auto;
