@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+  
 
   document.addEventListener('click', async (event) => {
     if (event.target.classList.contains('close-icon')) {
