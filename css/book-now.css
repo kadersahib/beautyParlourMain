@@ -201,6 +201,8 @@ body {
     .main-container-details {
         height: 630px;
         overflow-y: auto;
+        scrollbar-width: none;
+
     }
 
     .container {
