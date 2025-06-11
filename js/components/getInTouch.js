@@ -34,7 +34,7 @@ export async function getIntouch() {
             });
       
             if (allValid) {
-              window.location.href = 'index.html'; // ✅ Redirect if valid
+              // window.location.href = 'index.html'; // ✅ Redirect if valid
             } else {
               alert('Please fill in all required fields.');
             }
