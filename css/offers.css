@@ -154,7 +154,7 @@ body {
     }
 
     .offers-content {
-        width: 263px;
+        width: auto;
         height: auto;
         gap: 24px;
     }
