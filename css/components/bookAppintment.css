@@ -280,18 +280,18 @@ body {
 
 
 /* Tab Responsive Code  */
-@media (min-width: 801px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     body {
         padding: 0;
     }
 
     .modal-overlay {
-        padding: 150px 100px;
+        padding: 50px 50px;
     }
 
     .main-container {
         width: 630px;
-        height: 664px;
+        height: 630px;
 
     }
 
@@ -374,7 +374,7 @@ body {
 
 
 /* mobile Responsive code */
-@media(max-width:800px) {
+@media(max-width:767px) {
     body {
         padding: 0;
     }
