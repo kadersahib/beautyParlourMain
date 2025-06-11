@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+
   document.addEventListener('click', async (event) => {
     if (event.target.classList.contains('close-icon')) {
       await openDemoPage();
@@ -18,25 +19,24 @@ async function openDemoPage() {
     demoContainer.innerHTML = demoHtml;
 
     const modelOverlay = demoContainer.querySelector('.model-overlay');
-    if (modelOverlay) {
-      modelOverlay.style.display = ''; 
-    }
+    if (modelOverlay) modelOverlay.style.display = '';
 
-     // Handle "Get in Touch" button
+    // Handle "Get in Touch" button
     const getInTouchBtn = demoContainer.querySelector('.btn-1');
     if (getInTouchBtn) {
       getInTouchBtn.addEventListener('click', () => {
-        window.location.href = 'getinTouch.html'; // Adjust path if needed
+        window.location.href = 'getinTouch.html'; // Adjust if needed
       });
     }
 
+    // Handle close buttons
     const closeBtn = demoContainer.querySelector('.close');
     if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-            if (modelOverlay) modelOverlay.style.display = 'none';
-        });
+      closeBtn.addEventListener('click', () => {
+        if (modelOverlay) modelOverlay.style.display = 'none';
+      });
     }
-      // Handle "Cancel" button
+
     const cancelBtn = demoContainer.querySelector('.btn-2');
     if (cancelBtn) {
       cancelBtn.addEventListener('click', () => {

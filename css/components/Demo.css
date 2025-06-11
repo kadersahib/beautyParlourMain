@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
+body {
+    padding: 0;
+}
+
 .model-overlay {
     position: absolute;
     left: 0;
@@ -11,12 +15,12 @@
     backdrop-filter: blur(12.5px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 200px;
 }
 
 .model-content {
     width: 420px;
-    height: auto;
+    height: 250px;
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.40);
     padding: 24px;
@@ -103,7 +107,7 @@
 /* mobile screen code */
 @media(max-width:780px) {
     .model-overlay {
-        padding: 0px 24px;
+        padding: 200px 16px;
     }
 
     .model-content {
@@ -122,10 +126,12 @@
     }
 
     .btn-1 {
-        width: 100%;
+        /* width: 100%; */
+        width: 153px;
     }
 
     .btn-2 {
-        width: 100%;
+        /* width: 100%; */
+        width: 153px;
     }
 }
