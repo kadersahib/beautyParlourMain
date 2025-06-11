@@ -50,6 +50,8 @@ body {
 .container-header h2 {
     font-size: 28px;
     color: #333;
+    font-family: 'Sofia Sans';
+
 }
 
 .main-section {
@@ -74,6 +76,7 @@ body {
 .timing h4 {
     margin-top: 20px;
     font-size: 18px;
+    font-family: 'Sofia Sans';
 }
 
 /* Divider */
@@ -89,6 +92,7 @@ body {
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Sofia Sans';
 }
 
 form {
@@ -321,6 +325,7 @@ input[type="tel"] {
         font-size: 22px;
         font-weight: 600;
         color: #333;
+        font-family: 'Sofia Sans';
     }
 
     .main-section {
