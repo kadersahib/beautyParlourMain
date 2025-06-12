@@ -1,5 +1,4 @@
 
-
 export async function openDemoPage(demoContainer) {
   try {
     const response = await fetch('./Pages/Demo.html');

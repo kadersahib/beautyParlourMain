@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100..900&display=swap');
 
 
-/* desktop responsive code */
+
 html,
 body {
     margin: 0;
@@ -12,7 +12,7 @@ body {
     font-family: 'Sofia Sans', sans-serif;
     overflow-y: auto;
     font-size: 16px;
-
+    scrollbar-width: none;
 }
 
 body {
