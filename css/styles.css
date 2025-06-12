@@ -176,7 +176,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 45px 292px;
+    padding: 45px 0px;
     background-image: url("../public/images/offers-section-bg-ld.png");
     background-position: center;
     background-size: cover;
