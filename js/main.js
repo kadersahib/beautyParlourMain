@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupDemoTriggers();
     setupBookingButtons();
     getIntouch();
-    
-
 
   } catch (error) {
     console.error('Error initializing page:', error);

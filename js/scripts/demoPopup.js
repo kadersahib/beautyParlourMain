@@ -100,3 +100,4 @@ async function openDemoPage(demoContainer) {
     console.error('Error loading demo:', error);
   }
 }
+
