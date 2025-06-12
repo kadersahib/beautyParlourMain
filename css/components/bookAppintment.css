@@ -190,7 +190,7 @@ body {
 .booking-details {
     display: flex;
     justify-content: space-between;
-    margin: 16px 20px;
+    margin: 16px 0px;
 }
 
 .service-time {
@@ -351,6 +351,13 @@ body {
         padding-top: 20px;
         transition: all 0.3s ease;
     }
+
+    .booking-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 20px;
+    }
+
 
     /* write in js  */
     #details-section.expanded {
