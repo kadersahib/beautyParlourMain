@@ -1,7 +1,8 @@
 
 // import { otpModel } from './otpModal.js';
 import { countryData } from '../components/countryData.js';
-import { setupDemoTriggers } from './demoPopup.js';
+// import { setupDemoTriggers } from './demoPopup.js';
+import { openDemoPage } from './demoPopup.js'; // ✅ Import the correct function
 
 
 export function OpenBookFormModal() {
@@ -53,7 +54,7 @@ export function OpenBookFormModal() {
       if (nextBtn) {
         nextBtn.addEventListener('click', async () => {
           const demoContainer = document.getElementById('demoContainer');
-          if (demoContainer) await setupDemoTriggers(demoContainer);
+          if (demoContainer) await openDemoPage(demoContainer);
         });
       }
 
@@ -62,7 +63,7 @@ export function OpenBookFormModal() {
       if (loginBtn) {
         loginBtn.addEventListener('click', async () => {
           const demoContainer = document.getElementById('demoContainer');
-          if (demoContainer) await setupDemoTriggers(demoContainer);
+          if (demoContainer) await openDemoPage(demoContainer);
         });
       }
 

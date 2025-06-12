@@ -1,63 +1,6 @@
 
-export function setupDemoTriggers() {
-  // List of pages where demo should show
-  const allowedPages = ['index.html', 'offers.html', 'combos.html', 'book-now.html', 'getInTouch.html'];
 
-  const currentPage = window.location.pathname.split('/').pop();
-
-  // If current page is not in the list, exit early
-  if (!allowedPages.includes(currentPage)) return;
-
-  const demoContainer = document.getElementById('demoContainer');
-  if (!demoContainer) {
-    console.error('demoContainer not found in DOM');
-    return;
-  }
-
-  const attachEvents = () => {
-    const desktopLogin = document.getElementById('desktop-login');
-    const sidebarLogin = document.getElementById('sidebar-login');
-    const loginBtn = document.querySelector('.login-btn');
-    const nextBtn = document.getElementById('next-btn');
-
-    if (desktopLogin) {
-      desktopLogin.addEventListener('click', async (e) => {
-        e.preventDefault();
-        await openDemoPage(demoContainer);
-      });
-    }
-
-    if (sidebarLogin) {
-      sidebarLogin.addEventListener('click', async (e) => {
-        e.preventDefault();
-        await openDemoPage(demoContainer);
-      });
-    }
-
-    if (loginBtn) {
-      loginBtn.addEventListener('click', async (e) => {
-        e.preventDefault();
-        await openDemoPage(demoContainer);
-      });
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener('click', async (e) => {
-        e.preventDefault();
-        await openDemoPage(demoContainer);
-      });
-    }
-  };
-
-  // Wait a bit if desktop-login isn't loaded yet
-  if (!document.getElementById('desktop-login')) {
-    setTimeout(attachEvents, 100);
-  } else {
-    attachEvents();
-  }
-}
-
-async function openDemoPage(demoContainer) {
+export async function openDemoPage(demoContainer) {
   try {
     const response = await fetch('./Pages/Demo.html');
     if (!response.ok) throw new Error('Failed to load demo page');
@@ -72,25 +15,23 @@ async function openDemoPage(demoContainer) {
     if (sliderContainer) {
       sliderContainer.style.zIndex = '0';
     }
-     const hamburgerIcon = document.querySelector('.hamburger');
+
+    const hamburgerIcon = document.querySelector('.hamburger');
     if (window.innerWidth <= 1023 && hamburgerIcon) {
       hamburgerIcon.style.zIndex = '0';
     }
 
     demoContainer.querySelector('.btn-1')?.addEventListener('click', () => {
       window.location.href = 'getInTouch.html';
-      localStorage.removeItem('appointments'); // Clear appointments on page load
-      localStorage.removeItem('selectedSlot'); // Clear selected slot on close
+      localStorage.removeItem('appointments');
+      localStorage.removeItem('selectedSlot');
     });
 
     const closeOverlay = () => {
       if (overlay) overlay.style.display = 'none';
-        // ✅ Clear local storage when overlay is closed
       localStorage.removeItem('appointments');
       localStorage.removeItem('selectedSlot');
-      setTimeout(() => {
-        location.reload();
-      }, 300);
+      setTimeout(() => location.reload(), 300);
     };
 
     demoContainer.querySelector('.btn-2')?.addEventListener('click', closeOverlay);
@@ -101,3 +42,41 @@ async function openDemoPage(demoContainer) {
   }
 }
 
+// Attach listeners only to static elements
+export function setupDemoTriggers() {
+  const allowedPages = ['index.html', 'offers.html', 'combos.html', 'book-now.html', 'getInTouch.html'];
+  const currentPage = window.location.pathname.split('/').pop();
+  if (!allowedPages.includes(currentPage)) return;
+
+  const demoContainer = document.getElementById('demoContainer');
+  if (!demoContainer) {
+    console.error('demoContainer not found in DOM');
+    return;
+  }
+
+  const attachEvents = () => {
+    const desktopLogin = document.getElementById('desktop-login');
+    const sidebarLogin = document.getElementById('sidebar-login');
+
+    if (desktopLogin) {
+      desktopLogin.addEventListener('click', async (e) => {
+        e.preventDefault();
+        await openDemoPage(demoContainer);
+      });
+    }
+
+    if (sidebarLogin) {
+      sidebarLogin.addEventListener('click', async (e) => {
+        e.preventDefault();
+        await openDemoPage(demoContainer);
+      });
+    }
+  };
+
+  // Retry attaching events after delay if desktop-login is not yet rendered
+  if (!document.getElementById('desktop-login')) {
+    setTimeout(attachEvents, 100);
+  } else {
+    attachEvents();
+  }
+}
