@@ -20,7 +20,8 @@ body {
 
 .model-content {
     width: 420px;
-    height: 250px;
+    /* height: 250px; */
+    height: max-content;
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.40);
     padding: 24px;

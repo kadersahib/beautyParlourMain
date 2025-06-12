@@ -1,5 +1,4 @@
 
-
 export function setupDemoTriggers() {
   // List of pages where demo should show
   const allowedPages = ['index.html', 'offers.html', 'combos.html', 'book-now.html', 'getInTouch.html'];
@@ -72,6 +71,10 @@ async function openDemoPage(demoContainer) {
     const sliderContainer = document.querySelector('.slider-container');
     if (sliderContainer) {
       sliderContainer.style.zIndex = '0';
+    }
+     const hamburgerIcon = document.querySelector('.hamburger');
+    if (window.innerWidth <= 1023 && hamburgerIcon) {
+      hamburgerIcon.style.zIndex = '0';
     }
 
     demoContainer.querySelector('.btn-1')?.addEventListener('click', () => {
