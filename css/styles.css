@@ -248,7 +248,6 @@ body {
     gap: 24px;
     overflow-x: auto;
     scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 .services-cards-container::-webkit-scrollbar {
