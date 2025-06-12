@@ -120,7 +120,6 @@ export function openBookAppointmentModal() {
       } else {
         console.warn('Next button not found in bookAppointment modal');
       }
-
       calendarData();
     })
     .catch(err => {
