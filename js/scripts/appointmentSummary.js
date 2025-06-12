@@ -71,6 +71,7 @@ export function setupSummaryModal(container, appointments) {
     // document.getElementById('navbar-container').style.display = '';
     document.body.classList.remove('modal-open');
     localStorage.removeItem('appointments');
+    localStorage.removeItem('selectedSlot');
   });
 
   const bookAppointmentBtn = container.querySelector('#book-appointment-btn');
