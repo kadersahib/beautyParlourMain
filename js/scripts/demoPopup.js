@@ -76,10 +76,15 @@ async function openDemoPage(demoContainer) {
 
     demoContainer.querySelector('.btn-1')?.addEventListener('click', () => {
       window.location.href = 'getInTouch.html';
+      localStorage.removeItem('appointments'); // Clear appointments on page load
+      localStorage.removeItem('selectedSlot'); // Clear selected slot on close
     });
 
     const closeOverlay = () => {
       if (overlay) overlay.style.display = 'none';
+        // ✅ Clear local storage when overlay is closed
+      localStorage.removeItem('appointments');
+      localStorage.removeItem('selectedSlot');
       setTimeout(() => {
         location.reload();
       }, 300);

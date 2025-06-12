@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupDemoTriggers();
     setupBookingButtons();
     getIntouch();
+    
 
 
   } catch (error) {

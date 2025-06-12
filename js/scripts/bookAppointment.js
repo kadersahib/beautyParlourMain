@@ -147,7 +147,8 @@ function openContinueExitModal() {
 
       exitBtn?.addEventListener('click', () => {
         window.location.href = 'index.html';
-        localStorage.removeItem('appointments');
+        localStorage.removeItem('appointments'); 
+        localStorage.removeItem('selectedSlot'); 
       });
 
       continueBtn?.addEventListener('click', () => {
@@ -155,6 +156,8 @@ function openContinueExitModal() {
       });
 
       closeBtn?.addEventListener('click', () => {
+        localStorage.removeItem('appointments'); 
+        localStorage.removeItem('selectedSlot');
         modalContainer.innerHTML = '';
         window.location.href = 'index.html';
       });
