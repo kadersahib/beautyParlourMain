@@ -190,7 +190,7 @@ body {
 .booking-details {
     display: flex;
     justify-content: space-between;
-    margin: 16px 0;
+    margin: 16px 20px;
 }
 
 .service-time {
@@ -286,7 +286,7 @@ body {
     }
 
     .modal-overlay {
-        padding: 50px 50px;
+        padding: 200px 50px;
     }
 
     .main-container {
@@ -436,9 +436,15 @@ body {
         width: 131px;
     }
 
+    .booking-details {
+        margin: 16px 0px;
+    }
+
     #book-appointment {
         font-size: 22px;
     }
+
+
 
 
     .next-btn {
